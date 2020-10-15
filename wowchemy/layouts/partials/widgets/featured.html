@@ -48,6 +48,8 @@
   {{ $i18n = "more_pages" }}
 {{ end }}
 
+{{ $columns := $st.Params.design.columns | default "2" }}
+
 <div class="row {{if not $st.Title | or (eq $columns "1") }}justify-content-center{{end}}">
   
   {{ if $st.Title }}
