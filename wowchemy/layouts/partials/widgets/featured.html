@@ -54,7 +54,7 @@
   
   {{ if $st.Title }}
     {{ if eq $columns "1" }}
-      <div class="col-12 col-lg-8 section-heading text-center">
+      <div class="col-lg-12 col-lg-8 section-heading text-center">
         <h1>{{ with $st.Title }}{{ . | markdownify | emojify }}{{ end }}</h1>
         {{ with $st.Params.subtitle }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
       </div>
